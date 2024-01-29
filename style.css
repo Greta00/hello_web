@@ -1,0 +1,189 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+header{
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
+    text-align: left;
+    background-color: white;
+    text-align: center;
+}
+body{
+    background-color: rgb(204, 255, 192);
+}
+
+.gomb{
+    background-color: rgb(151, 207, 138);
+    color: rgb(72, 72, 72);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 0px rgb(120, 169, 108);
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.gomb:hover{
+    background-color: rgb(217, 255, 210);
+    cursor: pointer;
+}
+
+.search_bar_div{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.logo{
+    height: 120px;
+    margin-bottom: 15px;
+}
+.header_szoveg_div{
+    background-color: rgb(120, 169, 108);
+    height: 50px;
+}
+
+option {
+    padding: 4px;
+    color: #e7e7e7;
+    margin-bottom: 1px;
+    font-size: 18px;
+    cursor: pointer;
+    display:block;
+  }
+
+.szoveg{
+    font-family: 'Sniglet', system-ui;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+footer{
+    height: 15px;
+    background-color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.email{
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+}
+.valasz{
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: rgb(129, 129, 129);
+    height: 80px;
+    max-height: 80px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid rgb(153, 200, 141);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin:auto;
+}
+.copy_img{
+    height: 50px;
+}
+.copy_div{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 20px 0 20px 0;
+}
+.copy_img:hover{
+    cursor: pointer;
+
+}
+.grid_container{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    
+}
+
+.custom-select {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #252525;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: white;
+    padding: 15px 20px 15px 20px;
+    height: 30px;
+    box-shadow: 0 2px 2px 0px rgb(120, 169, 108);
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+  border: 6px solid transparent;
+  border-color: #000000 transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000000 transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 20px;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 320px;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
